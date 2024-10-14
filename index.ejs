@@ -1,0 +1,248 @@
+'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            color: white; /* Change text color for better visibility */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://img.freepik.com/premium-photo/photorealistic-cinematic-photo-poor-mexican-children-begging-food_1161356-105844.jpg');
+            background-size: cover; /* Cover the entire container */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-position: center; /* Center the image */
+            flex: 1; /* Allow it to take remaining space */
+            padding: 20px;
+        }
+
+        .navbar1, .navbar, .secondary-navbar {
+            width: 100%;
+        }
+
+        .navbar1 {
+            display: flex;
+            height: 40px;
+        }
+
+        .navbar1 .info {
+            background-color: blue;
+            width: 70%;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .navbar1 .partner {
+            background-color: lightgrey;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        .navbar1 img {
+            margin-right: 5px;
+            height: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: rgba(244, 244, 244, 0.8); /* Slight transparency */
+            padding: 10px;
+        }
+
+        .navbar img {
+            margin-right: 20px;
+            height: 50px;
+        }
+
+        .secondary-navbar {
+            background-color: rgb(211, 5, 5);
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .secondary-navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 24px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid #ccc;
+            margin-top: auto;
+            min-height: 60px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .button-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .center-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: rgb(211, 5, 5);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .center-button:hover {
+            background-color: darkred;
+        }
+
+        .navbar1 .info h3 {
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+        .black-footer {
+    color: black;
+}
+
+.black-footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    background-color: rgba(244, 244, 244, 0.8);
+    padding: 10px;
+}
+
+.navbar img {
+    margin: 0 10px; /* Add some space between logos */
+    height: 50px; /* Ensure logos are of the same height */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    background-color: rgba(244, 244, 244, 0.8);
+    padding: 10px;
+}
+
+.left-logo {
+    height: 50px; /* Set height for the left logo */
+    margin-right: auto; /* Push other items to the right */
+}
+
+.center-logo {
+    height: 50px; /* Set height for your logo */
+    margin-left: auto; /* Center this logo */
+}
+
+
+    </style>
+    <base href="c:\Users\Dell\Pictures">
+</head>
+<body>
+
+    <div class="navbar1">
+        <div class="info">
+            <box-icon name='envelope' color='white'></box-icon>
+            <h3>info@alkhidmat.org</h3>
+            <box-icon name='phone' color='white'></box-icon>
+            <h3>03444822378</h3> 
+        </div>
+        <div class="partner">
+            <h3>International Partner</h3>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Alkhidmat_Foundation_Pakistan.png" alt="Alkhidmat Foundation" class="left-logo">
+        <img src="../Communitylogo.jpg" alt="Your Logo" class="center-logo">
+
+    </div>
+    
+    
+    
+    <div class="secondary-navbar">
+        <a href="/donate">Donate</a>
+    </div>
+
+    <div class="content">
+        <h1>CommunityBiteShare</h1>
+        <br>
+        <br>
+        <h3>"Whoever feeds someone who is hungry will have his sins forgiven, and whoever helps someone to"</h3>
+        
+        <div class="button-wrapper">
+            <div class="button-container">
+                <button class="center-button" onclick="window.location.href='/donate'">Donate Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer black-footer">
+        <p>&copy; 2024 Alkhidmat Foundation</p>
+        &nbsp;|&nbsp; 
+        <div>
+            <a href="mailto:info@alkhidmat.org">Email Us</a>
+            &nbsp;|&nbsp; 
+            <a href="https://www.instagram.com/your_instagram_handle" target="_blank">Instagram</a>
+        </div>
+    </div> 
+</div> 
+</div>
+s
+        </div>
+        
+    </div>
+    
+</body>
+</html>
